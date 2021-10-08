@@ -112,7 +112,7 @@ INSERT INTO usuarios (id, nombre, email) VALUES (99, 'Lotti Hubbold', 'lhubbold2
 DROP TABLE IF EXISTS `categorias`;  
 CREATE TABLE `categorias` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `nombre` VARCHAR(50) NULL,
+  `nombre` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id`));
 
 INSERT INTO categorias (id, nombre) VALUES (1,'Finanzas');
