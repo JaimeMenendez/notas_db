@@ -153,7 +153,7 @@ CREATE TABLE `notas_db`.`notas` (
   `titulo` VARCHAR(100) NOT NULL DEFAULT 'Sin título',
   `creacion` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modificacion` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `descripcion` VARCHAR(1000) NULL,
+  `descripcion` TEXT NULL,
   `usuario` INT NOT NULL,
   PRIMARY KEY (`id`),
   KEY `usuario_id_foreign` (`usuario`),
