@@ -155,6 +155,7 @@ CREATE TABLE `notas_db`.`notas` (
   `modificacion` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `descripcion` TEXT NULL,
   `usuario` INT NOT NULL,
+  `puedeEliminarse` TINYINT NOT NULL DEFAULT 1,
   PRIMARY KEY (`id`),
   KEY `usuario_id_foreign` (`usuario`),
   CONSTRAINT `usuario_id_foreign` FOREIGN KEY (`usuario`) REFERENCES `usuarios` (`id`));
